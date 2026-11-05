@@ -19,6 +19,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // Pleos Connect SDK (Vehicle, NaviHelper, FusedLocation, STT/TTS)
+        maven {
+            url = uri("https://nexus-playground.pleos.ai/repository/maven-releases/")
+            content { includeGroupByRegex("ai\\.pleos.*") }
+        }
     }
 }
 

@@ -1,18 +1,55 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# ===== Gradle =====
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+.kotlin/
+
+# ===== 로컬 환경 (PC마다 다름) =====
 local.properties
-.kotlin
-/.idea/deploymentTargetSelector.xml
-/.idea/deviceManager.xml
+# 서명 키·비밀값은 절대 커밋하지 않는다
+*.jks
+*.keystore
+keystore.properties
+secrets.properties
+*.env
+.env*
+
+# ===== Android 빌드 산출물 =====
+*.apk
+*.aab
+*.ap_
+*.dex
+output-metadata.json
+/captures
+.externalNativeBuild/
+.cxx/
+*.hprof
+
+# ===== Android Studio / IntelliJ =====
+*.iml
+*.ipr
+*.iws
+.idea/*
+# 팀이 같이 써야 하는 IDE 설정만 공유
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+!.idea/runConfigurations.xml
+!.idea/compiler.xml
+!.idea/gradle.xml
+!.idea/misc.xml
+!.idea/vcs.xml
+!.idea/AndroidProjectSystem.xml
+!.idea/.gitignore
+
+# ===== 로그 / 덤프 =====
+*.log
+logcat*.txt
+bugreport*.zip
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Claude Code 개인 설정 =====
+.claude/settings.local.json
