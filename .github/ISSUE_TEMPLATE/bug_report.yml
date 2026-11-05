@@ -1,0 +1,37 @@
+name: 버그 리포트
+description: 잘못 동작하는 부분 신고
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: 무슨 문제인가요?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 방법
+      value: |
+        1. 
+        2. 
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대한 동작
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 실행 환경
+      placeholder: "예: Pleos Connect Emulator v2.1.0 / 실차"
+  - type: textarea
+    id: logs
+    attributes:
+      label: 로그·스크린샷
+      description: logcat 로그나 화면 캡처가 있으면 붙여 주세요.
+      render: text
