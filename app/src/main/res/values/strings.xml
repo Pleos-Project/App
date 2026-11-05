@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Pleos_App</string>
+    <string name="sdk_checking">Vehicle SDK 연결 확인 중…</string>
+    <string name="sdk_ok">Vehicle SDK 연결 정상 (운전석 도어 위치: %1$s)</string>
+    <string name="sdk_failed">Vehicle SDK 호출 실패: %1$s</string>
 </resources>

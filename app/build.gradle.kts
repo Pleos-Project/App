@@ -36,6 +36,14 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
+
+    // Pleos Connect SDK — 필요한 SDK만 주석을 풀어서 사용
+    implementation(libs.pleos.vehicle)
+    // implementation(libs.pleos.navihelper)
+    // implementation(libs.pleos.fusedlocation)
+    // implementation(libs.pleos.speechtotext)
+    // implementation(libs.pleos.texttospeech)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
