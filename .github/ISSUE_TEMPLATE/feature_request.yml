@@ -1,0 +1,31 @@
+name: 기능 요청
+description: 새 기능이나 개선 작업
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 배경
+      description: 왜 이 작업이 필요한가요?
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: 할 일
+      description: 작업 항목을 체크리스트로 적어 주세요.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 기준
+      description: 어떻게 되면 끝난 건가요? (에뮬레이터 확인 방법 등)
+  - type: input
+    id: sdk
+    attributes:
+      label: 사용하는 Pleos SDK / 권한
+      placeholder: "예: Vehicle (CAR_DOORS), NaviHelper"
